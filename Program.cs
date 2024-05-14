@@ -10,6 +10,9 @@ Console.WriteLine("Ingrese un numero: ");
 Ingresar = Console.ReadLine();
 int NumeroInvertido = Invertir(Ingresar);
 Console.WriteLine("Numero invertido: "+NumeroInvertido);
+int resultado = Calculadora(1, 10, 20);
+Console.WriteLine("Resultado: "+resultado);
+
 
 
 
@@ -26,4 +29,26 @@ static int Invertir(string s){
         Console.WriteLine("Lo que se ingreso no es un numero o es cero");
     }
     return NumeroInvertido;
+}
+
+static int Calculadora(int opcion, int num1, int num2){
+    int resultado;
+    switch(opcion){
+        case 1:
+            resultado = num1+num2;
+            break;
+        case 2:
+            resultado = num1-num2;
+            break;
+        case 3:
+            resultado = num1*num2;
+            break;
+        case 4:
+            resultado = num1/num2;
+            break;
+        default:
+            resultado = 0;
+            break;
+    }
+    return resultado;
 }
