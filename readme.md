@@ -16,7 +16,7 @@ Las secuencias de escape se utilizan para representar caracteres esoeciales dent
 ## ¿Qué sucede cuando utiliza el carácter @ y $ antes de una cadena de texto?
 En C#, los caracteres @ y $ tienen significados especiales cuando se utilizan antes de una cadena de texto:
 - *@ (Verbatim Identifier Character)*: Cuando precedes una cadena con @, se trata como una cadena literal sin interpretar secuencias de escape. Esto significa que puedes incluir caracteres especiales (como barras invertidas) sin escaparlos. Por ejemplo:
-      _string rutaArchivo = @"C:\Directorio\Archivo.txt"_
+-       _string rutaArchivo = @"C:\Directorio\Archivo.txt"_
 - *$ (Interpolated String Character)*: El símbolo $ se utiliza para crear cadenas interpoladas. En una cadena interpolada, puedes incluir expresiones dentro de llaves {} que se evalúan y se insertan en la cadena. Por ejemplo: 
-      _int edad = 30_;
-      _string mensaje = $"Mi edad es {edad} años."_;
+-       _int edad = 30_;
+-       _string mensaje = $"Mi edad es {edad} años."_;
